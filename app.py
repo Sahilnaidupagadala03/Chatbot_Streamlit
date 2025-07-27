@@ -22,7 +22,7 @@ user_input = st.text_area("Enter your message", height=150)
 
 # Get API Key from st.secrets
 API_URL = f"https://api-inference.huggingface.co/models/{model_options[model_name]}"
-headers = {"Authorization": f"Bearer {st.secrets[Key2]}"}
+headers = {"Authorization": f"Bearer {st.secrets['Key2']}"}
 
 # Function to query model
 def query(payload):
